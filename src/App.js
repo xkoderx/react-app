@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
+function holaMundo(nombre,edad) {
+  var presentacion = (
+    <div>
+      <h2>Hola, soy {nombre}</h2>
+      <h1>Tengo {edad} años</h1>
+    </div>
+  )
+  return presentacion;
+}
+
 function App() {
+  var nombre = "Erick Deloera";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>{holaMundo(nombre,22)}</h1>
     </div>
   );
 }
