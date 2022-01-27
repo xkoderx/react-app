@@ -1,4 +1,7 @@
-import './App.css';
+import './assets/css/App.css';
+import './assets/images/logo.svg'
+//importar componente
+import Componente1 from './components/Componente1';
 
 function holaMundo(nombre,edad) {
   var presentacion = (
@@ -15,6 +18,12 @@ function App() {
   return (
     <div>
       <h1>{holaMundo(nombre,22)}</h1>
+      <section className="componentes">
+        <Componente1/>
+        <Componente1/>
+        <Componente1/>
+        <Componente1/>
+      </section>
     </div>
   );
 }
